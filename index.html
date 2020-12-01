@@ -3,16 +3,26 @@
 	<head>
 		<title>Duck Hunt</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<div class="stage">
+			<div id="gameOverScreen">
+				<img class="gameOverImage" src="images/gameOver.jpg" alt="Game over" width="500" height="500">
+				<div class="finalScore">
+					<div>HITS: <p id="finalScoreHitText"></p></div>
+					<div>MISSES: <p id="finalScoreMissText"></p></div>
+					<button id="retryButton">RETRY</button>
+				</div>
+			</div>
 			<img id="stageImage" src="images/stage.png" alt="stage" draggable="false">
 			<img id="duck" src="images/duck.gif" alt="duck" draggable="false">
 		</div>
 		<div id="scoreboard">
 			<div class="scoreboardText">
-				<div class="hitText">HIT : <p id="hit"></p></div>
-				<div class="missText">MISS : <p id="miss"></p></div>
+				<div>HIT: <p id="hitText">-</p></div>
+				<div>MISS: <p id="missText">-</p></div>
 			</div>
 		</div>
 		<script src="script/script.js"></script>
