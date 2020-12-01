@@ -1,0 +1,39 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.stage {
+	position: relative;
+	width: 1280px;
+	height: 769px;
+	margin: 10px auto;
+	border: black 5px solid;
+	cursor: crosshair;
+}
+#duck {
+	position: absolute;
+	left: calc(1280px / 2 - 250px / 2);
+	top: 260px;
+	display: inline-block;
+
+}
+#scoreboard {
+	width: 300px;
+	height: 150px;
+	background-color: black;
+	border: green 6px solid;
+	border-radius: 40px;
+	margin: 20px auto;
+}
+.scoreboardText {
+	margin-left: 25px;
+	margin-top: 30px;
+	color: white;
+	font-size: 40px;
+	font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+}
+#hit, #miss {
+	display: inline-block;
+}
+
