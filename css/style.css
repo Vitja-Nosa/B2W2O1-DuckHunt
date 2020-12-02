@@ -3,24 +3,25 @@
 	margin: 0;
 }
 body {
-	background-image: url(../images/hunter.jpg);
+	background-image: url(../images/duckhuntBackground.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.stage {
+#stage {
 	position: relative;
 	width: 1280px;
 	height: 769px;
 	margin: 10px auto;
-	border: black 5px solid;
 	cursor: crosshair;
+}
+#stageImage {
+	border: black 5px solid;
 }
 #duck {
 	position: absolute;
 	left: calc(1280px / 2 - 250px / 2);
 	top: 260px;
 	display: inline-block;
-
 }
 #scoreboard {
 	width: 300px;
@@ -46,14 +47,14 @@ body {
 #gameOverScreen {
 	display: none;
 	background-color: black;
-	width: 1280px;
-	height: 769px;
-	position: absolute;
+	width: 1290px;
+	height: 779px;
 	color: white;
-	cursor: default;
+	position: relative;
+	margin: 10px auto;
 }
 .gameOverImage {
-	position: relative;
+	position: absolute;
 	left: calc(640px - 250px);
 }
 .finalScore {
@@ -67,15 +68,17 @@ body {
 	font-family: 'Press Start 2P', cursive;
 	margin: 50px 0;
 }
-.finalScore button {
-	padding: 40px 70px;
+#retryButton {
+	position: absolute;
+	bottom: 25px;
+	right: 20px;
+	padding: 40px 60px;
 	color: white;
 	font-size: 30px;
 	background-color: red;
 	border-radius: 20px;
 	margin-left: 550px;
 	font-family: 'Press Start 2P', cursive;
-	box-shadow: 30px;
 }
 button:focus { 
 	outline: none;
@@ -87,5 +90,16 @@ button:focus {
 #finalScoreMissText {
 	color: #D80101;
 	display: inline-block;
+}
+.box {
+	position: absolute;
+	bottom: 90px;
+	width: 1280px;
+}
+#gameplayFeedback {
+	text-align: center;
+	color: white;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 20px;
 }
 
