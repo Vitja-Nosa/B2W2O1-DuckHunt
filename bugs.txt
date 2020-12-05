@@ -1,5 +1,0 @@
-- duck needs to not spawn at the same place everytime. (duck needs random spawn point every time duck gets hit.)
-- duck need to be able to escape. (if duck is on the screen for more than, for example, 5 movements, display none duck.)
-- better looking css. (no gap between stage and border on different screens, duck rotates when he looks left, button has somekind of shadow, change background image)
-- comment on gameplay based on score when the player is in the game over screen. (things like: good job or you could do better.)
-- when duck is hit change img of duck to img of a defeated duck (player gets to see a defeated duck when they click on duck)
